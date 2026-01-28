@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MDV Madeiras - Gestão de Cotações</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      // Polyfill for process.env in browser environment to prevent crashes in MockApi/SDK
+      if (typeof process === 'undefined') {
+        window.process = { env: {} };
+      }
+      
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              mdv: {
+                primary: '#5D4037', // Tom madeira escura
+                secondary: '#8D6E63', // Tom madeira clara
+                bg: '#F5F5F4', // Stone 100
+                surface: '#FFFFFF',
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+      body {
+        font-family: 'Inter', sans-serif;
+        background-color: #F5F5F4;
+      }
+      /* Custom Scrollbar */
+      .custom-scrollbar::-webkit-scrollbar {
+        width: 6px;
+      }
+      .custom-scrollbar::-webkit-scrollbar-track {
+        background: #f1f1f1;
+      }
+      .custom-scrollbar::-webkit-scrollbar-thumb {
+        background: #ccc;
+        border-radius: 3px;
+      }
+      .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+        background: #999;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/client": "https://aistudiocdn.com/react-dom@^19.2.0/client",
+    "react-dom": "https://aistudiocdn.com/react-dom@^19.2.0",
+    "recharts": "https://aistudiocdn.com/recharts@^3.4.1",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.554.0",
+    "react-router-dom": "https://aistudiocdn.com/react-router-dom@^6.28.0",
+    "mailparser": "https://aistudiocdn.com/mailparser@^3.9.0",
+    "imap-simple": "https://aistudiocdn.com/imap-simple@^5.1.0",
+    "pdf-parse": "https://aistudiocdn.com/pdf-parse@^2.4.5",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.30.0",
+    "express": "https://aistudiocdn.com/express@^5.1.0",
+    "cors": "https://aistudiocdn.com/cors@^2.8.5",
+    "mssql": "https://aistudiocdn.com/mssql@^12.1.1",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "react/": "https://esm.sh/react@^19.2.4/"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>

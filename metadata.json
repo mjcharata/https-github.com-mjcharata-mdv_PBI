@@ -1,0 +1,8 @@
+{
+  "name": "MDV Madeiras - Gestão de Cotações",
+  "description": "Aplicação de rastreio e gestão de pedidos de cotação via email para a MDV Madeiras, incluindo dashboard de KPIs e CRM.",
+  "requestFramePermissions": [
+    "camera",
+    "geolocation"
+  ]
+}
